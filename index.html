@@ -23,53 +23,22 @@
         <h1>Jimmy's Diner</h1>
         <h3 class="fw400">The best burgers and pizzas in town.</h3>
       </header>
-      <section>
-        <div class="icon-menu">
-          <p class="icons">🍕</p>
-          <p>
-            <span class="food-span">Pizza</span>
-            <span class="food-ingredients">pepperoni,mushrom,mozarella</span>$14
-          </p>
-          <button>+</button>
-        </div>
-        <div class="icon-menu">
-          <p class="icons">🍔</p>
-          <p class="test">
-            <span class="food-span">Burger</span>
-            <span class="food-ingredients">beef, cheese, lettuce</span>$12
-          </p>
-          <button>+</button>
-        </div>
-        <div class="icon-menu">
-          <p class="icons">🍺</p>
-          <p>
-            <span class="food-span">Beer</span>
-            <span class="food-ingredients">grain, hops, yeast, water</span>$12
-          </p>
-          <button>+</button>
-        </div>
+      <section id="food-section">
       </section>
       <div class="footer">
-      <footer>
+      <footer id="footer">
         <div class="child">
             <h5 id="your-order" class="fw400">Your order</h5>
-            <p class="order">
-            <span class="order-item fw400">Pizza</span
-            ><span class="order-remove fw400">remove</span
-            ><span class="order-price fw400">$14</span>
-            </p>
-            <p class="order">
-            <span class="order-item fw400">Beer</span
-            ><span class="order-remove fw400">remove</span
-            ><span class="order-price fw400">$12</span>
-            </p>
+            <div id="order-items">
+            </div>
             <p id="total" class="fw400">
             <span>Total price:</span><span id="total-price">$26</span>
             </p>
-            <button id="order-btn">Complete order</button>
+            <button  class="bigButton" id="order-btn">Complete order</button>
             </div>
         </div>
       </footer>
+          <p class="fw400" id="thank-msg">Thanks, <span>Temp</span>! Your order is on itws Way!</p>
       <!-- popup window -->
       <div id="popup">
         <h4>Enter card details</h4>
@@ -82,7 +51,7 @@
             placeholder="Enter your name"
             required
           />
-          <input
+          <input 
             class="fw400"
             type="text"
             id="cardnumber"
@@ -98,7 +67,7 @@
             placeholder="Enter CVV"
             required
           />
-          <button id="pay-btn">Pay</button>
+          <button class="bigButton" id="pay-btn">Pay</button>
         </form>
       </div>
     </div>
